@@ -4,16 +4,23 @@ class Bird {
     public function fly() {
         echo "Flying high in the sky!\n";
     }
+    public function layAnEgg() {
+        echo "Laying an egg!\n";
+    } 
 }
 
-class Swimmer {
+class Fish {
     public function swim() {
         echo "Swimming in the water!\n";
+    }
+    //метать икру
+    public function spawn() {
+        echo "Spawning!\n";
     }
 }
 
 // 1 вариант
-class Penguin extends Bird, Swimmer {
+class Penguin extends Bird, Fish {
 }
 
 
